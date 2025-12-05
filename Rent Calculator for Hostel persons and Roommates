@@ -1,0 +1,23 @@
+#Create a Smart Rent Split Calculator for roommates/hostel_boys (a python project for beginners)
+#---------------------------------------------------
+#smart split rent calculator------------------------
+#---------------------------------------------------
+
+rent = int(input("enter your rent of room/hostel = "))
+food = int(input("enter your food expenses = "))
+electricity = int(input("enter your electricity bill = "))
+wifi = int(input("enter you wifi bill = "))
+other = int(input("enter your other expenses = "))
+
+person = int(input("How many people are sharing room/hostel? = "))
+
+#calculatios
+Total_Expenses = (rent + food + electricity + wifi + other)
+Per_Person_Expenses = Total_Expenses//person
+
+
+#output
+print("\n--- EXPENSE SUMMARY ---")
+print("Total Monthly Shared Expense:", Total_Expenses)
+print("Number of People:", person)
+print("Amount Each Person Should Pay:", round(Per_Person_Expenses, 2))
